@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #11071F;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Customize the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+}
+
+/* Customize the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #7127BA; /* Your custom color */
+}
+
+/* Optional: Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5e2099; /* Darker shade when hovered */
+}
+
+.about-holder > div,
+a,
+.side-bar-wrapper .menu-side-bar ul li,
+.social-links img,
+#skills .card,
+#skills .card > .icon-img,
+#projects .card {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h5 {
+  font-family: "Preahvihear", sans-serif;
+  letter-spacing: 1.8px;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 38px;
+}
+h5 {
+  font-size: 28px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+p,
+a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a:hover {
+  color: #763CAC;
+}
+
+#side-bar-holder {
+  background-color: #1a0b2e;
+  display: none;
+  height: 100%;
+  max-width: 272px;
+  overflow-y: auto;
+  padding: 50px 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.side-bar-wrapper .menu-side-bar ul li {
+  background-color: #2c1250;
+  color: #fff;
+  display: block;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+.side-bar-wrapper .menu-side-bar ul li a:hover {
+  color: #fff;
+}
+.side-bar-wrapper .menu-side-bar ul li:hover,
+.side-bar-wrapper .menu-side-bar ul li.active {
+  background: #7127ba;
+}
+.side-bar-wrapper .menu-side-bar ul li + li {
+  margin-top: 10px;
+}
+
+.social-links img:hover {
+  transform: scale(0.8);
+}
+
+.btn-1 {
+  background-color: #2C1250;
+  border: 2px solid #693B93;
+  display: inline-block;
+  padding: 15px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  position: relative;
+}
+.btn-1:hover {
+  background-color: #763cac;
+  border: 2px solid #693B93;
+  color: #fff;
+}
+
+.container-wrap {
+  overflow: hidden;
+}
+
+#home {
+  padding: 0;
+}
+.about-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.about-holder > div {
+  position: relative;
+  top: 0;
+}
+.about-holder > div:hover {
+  top: -10px;
+}
+.about-holder > div:first-child {
+  width: 65%;
+}
+.about-holder > div:last-child {
+  width: 35%;
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+#about::before,
+#skills::before,
+#projects::before,
+#contact::before  {
+  display: inline-block;
+  filter: drop-shadow(0 5px 12px rgba(255,255,255, 1));
+  position: absolute;
+  font-size: 45em;
+  z-index: -1;
+  top: 0;
+  opacity: .05;
+}
+#about::before {
+  content: '</>';
+  left: -50px;
+  transform: rotate(130deg);
+}
+#skills::before {
+  content: '{ }';
+  font-size: 35em;
+  z-index: -1;
+  right: 150px;
+  transform: rotate(-130deg);
+}
+#projects::before {
+  content: '404';
+  left: 0;
+  font-size: 40em;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: -1;
+}
+#contact::before {
+  content: "<div/>";
+  font-size: 35em;
+  z-index: -1;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#skills .card {
+  border: 1px solid #693B93;
+  background: rgb(19,4,40);
+  background: linear-gradient(100deg, rgba(19, 4, 40, 1) 15%, rgba(37, 16, 67, 1) 30%, rgba(56, 18, 109, 1) 50%, rgba(38, 16, 69, 1) 85%, rgba(38, 16, 69, 1) 46%, rgba(25, 6, 52, 1) 100%);
+  box-shadow: rgb(50, 26, 81) 0px 0px 70px 10px;
+  position: relative;
+  top: 0;
+} 
+#skills .card:hover {
+  top: -10px;
+}
+#skills .card > .icon-img {
+  transform: scale(1);
+}
+#skills .card > .icon-img {
+  transform: scale(1);
+}
+#skills .card > .icon-img:hover {
+  transform: scale(0.8);
+}
+
+#projects .lists-proj:hover .card:not(:hover) {
+  transform: scale(.9);
+  opacity: .6;
+}
+
+#footer {
+  padding: 80px 0 0;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.wiggle-animation {
+  display: inline-block;
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 1699px) {
+  .wrap {
+    max-width: 90%;
+  }
+
+  .hero-image img {
+    width: 400px;
+  }
+  .banner .middle-text > div:first-child > span {
+    font-size: 40px;
+  }
+
+  .about-holder > div:first-child {
+    width: 55%;
+  }
+  .about-holder > div:last-child {
+    width: 39%;
+  }
+}
+@media only screen and (max-width: 1499px)  {
+  .banner .bottom-text {
+    padding-right: 200px;
+  }
+}
+@media only screen and (max-width: 1399px)  {
+  .banner .hero-name {
+    bottom: 65px;
+    right: 215px;
+  }
+  .banner .middle-text > div:first-child > span {
+    font-size: 36px;
+  }
+  .banner .bottom-text {
+    padding-right: 105px;
+  }
+  .banner .middle-text br {
+    display: none;
+  }
+  .hero-image img {
+    width: 900px;
+  }
+
+  #contact::before {
+    font-size: 25em;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .banner > .holder {
+    flex-direction: column;
+    text-align: center ;
+  }
+  .banner > .holder > div:first-child {
+    padding-bottom: 100px;
+  }
+  .hero-image img {
+    width: 400px;
+  } 
+  .banner .middle-text > div:first-child > span {
+    font-size: 48px;
+  }
+  .banner .bottom-text {
+    padding-right: 0;
+  }
+  .banner .social-links {
+    justify-content: center;
+  }
+  .banner .hero-name {
+    bottom: 65px;
+    right: 276px;
+  }
+
+  .about-holder > div:first-child {
+    width: 50%;
+  }
+  .about-holder > div:last-child {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .about-holder {
+    flex-direction: column;
+  }
+  .about-holder > div:first-child,
+  .about-holder > div:last-child {
+    width: 100%;
+    text-align: center;
+  }
+  .about-holder .accordion-holder h3 {
+    font-size: 45px;
+  }
+  .about-holder .accordion-holder .timeline-content {
+    font-size: 24px;
+  }
+  #projects::before,
+  #about::before,
+  #skills::before,
+  #contact::before  {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about::before {
+    font-size: 53em;
+  }
+  #projects::before {
+    font-size: 53em;
+  }
+  #skills::before {
+    font-size: 40em;
+  }
+  #contact::before {
+    font-size: 15em;
+  }
+}
