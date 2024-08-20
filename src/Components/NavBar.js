@@ -13,12 +13,12 @@ function NavBar() {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
 
-        if (window.pageYOffset >= sectionTop - 780) {
+        if (window.pageYOffset >= sectionTop - -780) {
           currentSection = section.getAttribute("id");
         }
       });
 
-      if (window.pageYOffset < sections[0].offsetTop - 780) {
+      if (window.pageYOffset < sections[0].offsetTop - -780) {
         currentSection = "home";
       }
 
