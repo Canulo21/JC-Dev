@@ -10,8 +10,6 @@ function Hambureger() {
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        console.log("Scroll Position:", window.pageYOffset); // Debugging scroll position
-        console.log("Section:", section.id, "Top Offset:", sectionTop); // Debugging section offsets
 
         if (window.pageYOffset >= sectionTop - -780) {
           currentSection = section.getAttribute("id");
@@ -23,7 +21,6 @@ function Hambureger() {
         currentSection = "home";
       }
 
-      console.log("Current Section:", currentSection); // Debugging current section
       setActiveSection(currentSection);
     };
 

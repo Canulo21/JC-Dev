@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import emailjs from "emailjs-com";
+import { Margin } from "@mui/icons-material";
 
 const theme = createTheme({
   components: {
@@ -133,7 +134,7 @@ function Contact() {
               <button
                 type="submit"
                 value="Send"
-                className="mt-4 ml-2 px-4 py-2 bg-[#763CAC] text-white font-semibold rounded flex items-center gap-3 uppercase hover:bg-[#1a0b2e]"
+                className="mt-4 px-4 py-2 bg-[#763CAC] text-white font-semibold rounded flex items-center gap-3 uppercase hover:bg-[#1a0b2e]"
               >
                 <div className="svg-wrapper-1">
                   <div className="svg-wrapper">

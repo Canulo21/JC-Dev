@@ -11,7 +11,7 @@ import Skills from "./Pages/Skills";
 function App() {
   return (
     <div className="App relative">
-      <div>
+      <div className="sb-site">
         <NavBar></NavBar>
         <section id="home" className="banner relative">
           <HeroBanner />
