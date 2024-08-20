@@ -6,6 +6,7 @@ import bannerArrow from "../Assets/images/banner-slider-arrow.png";
 import fbImg from "../Assets/images/facebook.png";
 import linkedImg from "../Assets/images/linkedin.png";
 import gitHubImg from "../Assets/images/github.png";
+import cv from "../Assets/resume.pdf";
 
 function HeroBanner() {
   return (
@@ -68,7 +69,7 @@ function HeroBanner() {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <a className="btn-1 mt-7" href="#">
+              <a className="btn-1 mt-7" href={cv} target="blank_">
                 Download CV
               </a>
             </motion.div>

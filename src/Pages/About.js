@@ -105,7 +105,7 @@ function About() {
                     <div className="timeline-content">
                       <div>Governor Alfonso D. Tan College</div>
                       <div className="timeline-date text-sm text-gray-400 mt-1">
-                        2021 - 2022
+                        2016 - 2021
                       </div>
                     </div>
                   </TimelineContent>
@@ -120,7 +120,7 @@ function About() {
                     <div className="timeline-content">
                       <div>Ozamis City School of Arts and Trades</div>
                       <div className="timeline-date text-sm text-gray-400 mt-1">
-                        2019 - 2021
+                        2010 - 2014
                       </div>
                     </div>
                   </TimelineContent>
@@ -132,9 +132,9 @@ function About() {
                   </TimelineSeparator>
                   <TimelineContent>
                     <div className="timeline-content">
-                      <div>Tudela Central School</div>
+                      <div>Tudela Elementary Central Schoo</div>
                       <div className="timeline-date text-sm text-gray-400 mt-1">
-                        2017 - 2019
+                        2004 - 2010
                       </div>
                     </div>
                   </TimelineContent>
