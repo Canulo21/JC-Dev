@@ -92,7 +92,7 @@ function About() {
                     </TimelineDot>
                   </TimelineSeparator>
                   <TimelineContent className="flex items-center">
-                    <h3 className="text-2xl">Education</h3>
+                    <h4 className="text-2xl">Education</h4>
                   </TimelineContent>
                 </TimelineItem>
 
@@ -157,7 +157,7 @@ function About() {
                     </TimelineDot>
                   </TimelineSeparator>
                   <TimelineContent className="items-center flex">
-                    <h3 className="text-2xl">Experience</h3>
+                    <h4 className="text-2xl">Experience</h4>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
