@@ -10,7 +10,7 @@ function Footer() {
         </span>
       </div>
       <div className="back-top fixed right-10 bottom-16 z-20">
-        <a href="#">
+        <a href="#" aria-label="back-top">
           <ArrowCircleUpIcon sx={{ fontSize: 50 }} />
         </a>
       </div>
