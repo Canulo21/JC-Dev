@@ -13,6 +13,7 @@ import {
 } from "@mui/lab";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import SchoolIcon from "@mui/icons-material/School";
+import Certificates from "./Certificates";
 
 function About() {
   return (
@@ -198,6 +199,7 @@ function About() {
             </div>
           </motion.div>
         </div>
+        <Certificates />
       </div>
     </>
   );

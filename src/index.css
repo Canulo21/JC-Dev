@@ -378,7 +378,8 @@ a,
 .social-links img,
 #skills .card,
 #skills .card > .icon-img,
-#projects .card {
+#projects .card,
+.cert-img  {
   -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
@@ -605,6 +606,15 @@ a:hover {
 .MuiFormControl-root {
   margin: 0 0 10px 0 !important;
 }
+
+.cert-img {
+  position: relative;
+  top: 0;
+}
+.cert-img:hover {
+  top: -10px;
+}
+
 
 @media only screen and (max-width: 1699px) {
   .wrap {

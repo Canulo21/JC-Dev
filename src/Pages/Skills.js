@@ -6,47 +6,47 @@ function Skills() {
   const skillSet = [
     {
       title: "Wordpress",
-      icon: <i class="devicon-wordpress-plain"></i>,
+      icon: <i className="devicon-wordpress-plain"></i>,
     },
     {
       title: "ReactJS",
-      icon: <i class="devicon-react-original"></i>,
+      icon: <i className="devicon-react-original"></i>,
     },
     {
       title: "Framer Motion",
-      icon: <i class="devicon-framermotion-original"></i>,
+      icon: <i className="devicon-framermotion-original"></i>,
     },
     {
       title: "GitHub",
-      icon: <i class="devicon-github-original"></i>,
+      icon: <i className="devicon-github-original"></i>,
     },
     {
       title: "HTML",
-      icon: <i class="devicon-html5-plain"></i>,
+      icon: <i className="devicon-html5-plain"></i>,
     },
     {
       title: "TailwindCSS",
-      icon: <i class="devicon-tailwindcss-original"></i>,
+      icon: <i className="devicon-tailwindcss-original"></i>,
     },
     {
       title: "Jquery",
-      icon: <i class="devicon-jquery-plain"></i>,
+      icon: <i className="devicon-jquery-plain"></i>,
     },
     {
       title: "Javscript",
-      icon: <i class="devicon-javascript-plain"></i>,
+      icon: <i className="devicon-javascript-plain"></i>,
     },
     {
       title: "PHP",
-      icon: <i class="devicon-php-plain"></i>,
+      icon: <i className="devicon-php-plain"></i>,
     },
     {
       title: "Adobe XD",
-      icon: <i class="devicon-xd-plain"></i>,
+      icon: <i className="devicon-xd-plain"></i>,
     },
     {
       title: "Adobe Photoshop",
-      icon: <i class="devicon-photoshop-plain"></i>,
+      icon: <i className="devicon-photoshop-plain"></i>,
     },
   ];
 
