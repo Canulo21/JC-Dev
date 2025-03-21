@@ -1,30 +1,33 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
-import { Box, Tabs, Tab } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box, Tab, Tabs } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
 import PaginationItem from "@mui/material/PaginationItem";
 import Stack from "@mui/material/Stack";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import vikarsj from "../Assets/proj-images/vikarsj.png";
-import nonbo from "../Assets/proj-images/nonbo.png";
-import total from "../Assets/proj-images/total.png";
-import sym from "../Assets/proj-images/sym.png";
-import selmer from "../Assets/proj-images/selmer.png";
-import haveservice from "../Assets/proj-images/haveservice.png";
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import belloubyg from "../Assets/proj-images/belloubyg.png";
-import naest from "../Assets/proj-images/naest.png";
+import btldanmark from "../Assets/proj-images/btldanmark.png";
 import dinskrotpris from "../Assets/proj-images/dinskrotpris.png";
+import haveservice from "../Assets/proj-images/haveservice.png";
+import naest from "../Assets/proj-images/naest.png";
+import nonbo from "../Assets/proj-images/nonbo.png";
+import obauer4 from "../Assets/proj-images/obauer4.png";
 import praksish from "../Assets/proj-images/praksish.png";
 import regler from "../Assets/proj-images/regler.png";
+import selmer from "../Assets/proj-images/selmer.png";
+import sym from "../Assets/proj-images/sym.png";
+import total from "../Assets/proj-images/total.png";
+import vikarsj from "../Assets/proj-images/vikarsj.png";
 import vognmand from "../Assets/proj-images/vognmand.png";
-import obauer4 from "../Assets/proj-images/obauer4.png";
-import btldanmark from "../Assets/proj-images/btldanmark.png";
+import { fadeIn } from "../variants";
+
+// for react proj
 import pokemonImg from "../Assets/proj-images/pokemon.png";
 import portfolioImg from "../Assets/proj-images/portfolio.png";
-import tacImg from "../Assets/proj-images/tac.png";
 import posImg from "../Assets/proj-images/pos.png";
+import postivusImg from "../Assets/proj-images/positivus.png";
+import tacImg from "../Assets/proj-images/tac.png";
 
 function Projects() {
   const [wordPressProjects, setWordPressProjects] = useState([]);
@@ -110,6 +113,14 @@ function Projects() {
 
     // Setting up ReactJS projects
     setReactProjects([
+      {
+        img: postivusImg,
+        link: "https://positivus-jc.vercel.app/",
+        githubLink: "https://github.com/Canulo21/positivus",
+        title: "Postivus",
+        description:
+          "A Training ground for me to learn front-end. I get the design from figma",
+      },
       {
         img: tacImg,
         link: "#",

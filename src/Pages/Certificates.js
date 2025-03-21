@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 import cert1 from "../Assets/images/cert-1.png";
+import cert2 from "../Assets/images/certificate-coursera.png";
+import cert3 from "../Assets/images/certificate-coursera2.png";
+import { fadeIn } from "../variants";
 
 function Certificates() {
   const [getCertifates, setGetCertificates] = useState([]);
@@ -12,6 +14,14 @@ function Certificates() {
       {
         img: cert1,
         alt: "Responsive Web Design",
+      },
+      {
+        img: cert2,
+        alt: "Build a free website with Wordpress",
+      },
+      {
+        img: cert3,
+        alt: "Build a Full Website using Wordpress",
       },
     ]);
   }, []);
@@ -40,7 +50,7 @@ function Certificates() {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <img src={cert.img} alt={cert.alt} />
+                <img src={cert.img} alt={cert.alt} className="h-full" />
               </motion.div>
             ))}
           </div>
