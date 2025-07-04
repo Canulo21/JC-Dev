@@ -1,18 +1,17 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
-import devImg from "../Assets/images/dev-1.png";
-import {
-  Timeline,
-  TimelineItem,
-  TimelineSeparator,
-  TimelineDot,
-  TimelineConnector,
-  TimelineContent,
-  timelineItemClasses,
-} from "@mui/lab";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import SchoolIcon from "@mui/icons-material/School";
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  timelineItemClasses,
+  TimelineSeparator,
+} from "@mui/lab";
+import { motion } from "framer-motion";
+import devImg from "../Assets/images/dev-1.png";
+import { fadeIn } from "../variants";
 import Certificates from "./Certificates";
 
 function About() {

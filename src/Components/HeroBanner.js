@@ -1,12 +1,13 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
-import heroImage from "../Assets/images/hero.png";
 import bannerArrow from "../Assets/images/banner-slider-arrow.png";
 import fbImg from "../Assets/images/facebook.png";
-import linkedImg from "../Assets/images/linkedin.png";
 import gitHubImg from "../Assets/images/github.png";
+// import heroImage from "../Assets/images/hero.png";
+import heroImage from "../Assets/images/hero.webp";
+import laptop from "../Assets/images/laptop.png";
+import linkedImg from "../Assets/images/linkedin.png";
 import cv from "../Assets/resume.pdf";
+import { fadeIn } from "../variants";
 
 function HeroBanner() {
   return (
@@ -82,7 +83,7 @@ function HeroBanner() {
             >
               <a
                 href="https://www.facebook.com/jhoncarlo.canulo"
-                target="blanl_"
+                target="blank_"
               >
                 <img src={fbImg} width="50px" height="50px" alt="Fb" />
               </a>
@@ -106,7 +107,7 @@ function HeroBanner() {
 
         <div className="hero relative">
           <motion.div
-            className="hero-name relative right-[230px] inline-block"
+            className="hero-name relative right-[100px] inline-block"
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
@@ -136,13 +137,23 @@ function HeroBanner() {
               width="500px"
               height="full"
               alt="hero"
-              className="relative z-10"
+              className="relative z-10 filter drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+            />
+            <img
+              src={laptop}
+              width="full"
+              height="full"
+              alt="laptop"
+              className="laptop absolute top-[130px] left-0 z-20 w-full h-full filter drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+              style={{
+                transform: "scaleX(-1) scale(0.9) translateX(25%)",
+              }}
             />
             <div
               className="absolute inset-0 z-[-1]"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(118, 60, 172, 1) 15%, rgba(255,255,255, .0) 60%)",
+                  "radial-gradient(circle, rgba(118, 60, 172, 1) 5%, rgba(255,255,255, .0) 65%)",
               }}
             ></div>
           </motion.div>
