@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function NavBar() {
   const [activeSection, setActiveSection] = useState("");
@@ -13,12 +13,12 @@ function NavBar() {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
 
-        if (window.pageYOffset >= sectionTop - -780) {
+        if (window.pageYOffset >= sectionTop - -550) {
           currentSection = section.getAttribute("id");
         }
       });
 
-      if (window.pageYOffset < sections[0].offsetTop - -780) {
+      if (window.pageYOffset < sections[0].offsetTop - -550) {
         currentSection = "home";
       }
 
